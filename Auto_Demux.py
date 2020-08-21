@@ -40,7 +40,7 @@ def new_search():
                     print("NEW RUN - performing DEMUX. mamba out.")
                     os.chdir(folder)
                     run_dir = folder.name
-                    with open("nextseq/Demux_log.txt","w+") as demux_log:                    
+                    with open(f"{nextseq}/Demux_log.txt","w+") as demux_log:                    
                     """
                     A text file logging the date and time of finding a new nextseq sequencing run from an Illumina Nextseq machine is written in the directory where the directory that the data is being uploaded to. 
                     Once a new run is found and its sequencing is complete, a docker run commmand is performed. The container has all scripts required for demuxing data. 
