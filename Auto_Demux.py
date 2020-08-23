@@ -1,9 +1,4 @@
 #!/usr/bin/env python3
-import logging
-from logging.config import dictConfig
-from log_config import LOGGING_CONFIG
-from log_meta_data import (set_log_meta_data,
-                                    get_log_meta_data)
 from pathlib import Path
 import sys
 from datetime import date
